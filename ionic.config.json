@@ -1,0 +1,7 @@
+{
+  "name": "MyToDo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

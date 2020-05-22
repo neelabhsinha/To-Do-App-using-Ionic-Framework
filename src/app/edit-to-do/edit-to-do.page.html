@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Edit ToDo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">New Date & Time</ion-label>
+          <ion-datetime min="2020" max="2100" display-format="MMM DD, YYYY HH:mm" placeholder="MMM, DD, YYYY HH:mm" [(ngModel)]="tododeadline">
+          </ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">New Priority Index</ion-label>
+          <ion-select placeholder="Select One" [(ngModel)]="todopriority">
+            <ion-select-option>Not Important</ion-select-option>
+            <ion-select-option>Important</ion-select-option>
+            <ion-select-option>Necessary</ion-select-option>
+            <ion-select-option>Urgent</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Description </ion-label>
+          <ion-input type="text" maxlength="200" placeholder="Upto 200 characters.." [(ngModel)]="tododescription"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-button expand="block" shape="round" color="primary" (click)="editedToDo()"> Confirm Changes </ion-button>
+</ion-content>

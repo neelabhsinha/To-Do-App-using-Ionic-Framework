@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-icon name="list-circle-outline" slot="start" size="large"></ion-icon>
+    <ion-title>To-Do</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card  *ngFor="let task of titles">
+      <ion-item-sliding>
+        <ion-item>
+          <ion-checkbox slot="start" color="primary" fill="outline"></ion-checkbox>
+          <ion-label style="font-size: 15px;">
+            <h2 style="font-weight: 500;">{{task[0]}}</h2>
+            <ion-icon name="calendar-outline" slot="start" size="small" color="primary"></ion-icon>
+             {{task[1]}}
+             
+             <br>
+            <ion-icon name="alarm-outline" slot="start" size="small" color="primary"></ion-icon>
+            {{task[2]}}
+          </ion-label>
+          <ion-button fill="clear" size="large" shape="round" color="primary" (click)="viewToDo(task[0])">
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+        
+        <ion-item-options side="end">
+          <ion-item-option color="secondary">
+            <ion-icon name="create-outline" (click)="editToDo(task[0])"></ion-icon>
+          </ion-item-option>
+          <ion-item-option color="danger" (click)="removeToDo(task[0])">
+            <ion-icon name="close-outline"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+  
+      </ion-item-sliding>
+  </ion-card>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="primary" [routerLink]="['/new-to-do']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar  class="footerclass">
+    <ion-title id="footerclass">
+      Neelabh Sinha
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
