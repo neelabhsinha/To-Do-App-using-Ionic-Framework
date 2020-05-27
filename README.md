@@ -21,6 +21,7 @@ To execute the given code, type -
 
 ``` git
 $ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
+$ cd To-Do-App-using-Ionic-Framework
 $ ionic serve --l
 ```
 
