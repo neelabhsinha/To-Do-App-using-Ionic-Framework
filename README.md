@@ -5,19 +5,19 @@ This is a mobile app for a ToDo list, and supports Create, Read, Update and Dele
 
 To install required plugins -
 
-Download and install [Node.js](https://nodejs.org/en/) and check using -
+1. Download and install [Node.js](https://nodejs.org/en/) and check using -
 
 ``` cmd
 node --version
 ```
-Install Ionic and Cordova Plugin using -
+2. Install Ionic and Cordova Plugin using, along with Ionic Storage using -
 
 ``` cmd
 $ npm install -g ionic cordova
 $ ionic cordova plugin add cordova-sqlite-storage
 $ npm install --save @ionic/storage
 ```
-To execute the given code, type -
+3. To execute the given code, open Git Bash and type -
 
 ``` git
 $ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
