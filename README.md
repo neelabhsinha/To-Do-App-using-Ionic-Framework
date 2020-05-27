@@ -10,20 +10,15 @@ To install required plugins -
 ``` cmd
 node --version
 ```
-2. Install Ionic and Cordova Plugin using, along with Ionic Storage using -
+2. Open Gitbash and type -
 
 ``` cmd
+$ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
+$ cd To-Do-App-using-Ionic-Framework
 $ npm install -g ionic cordova
 $ ionic cordova plugin add cordova-sqlite-storage
 $ npm install --save @ionic/storage
-```
-3. To execute the given code, open Git Bash and type -
-
-``` git
-$ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
-$ cd To-Do-App-using-Ionic-Framework
 $ ionic serve --l
-```
 
 <h2> Home Screen - </h2>
 <img src="/screenshots/Sidebar.PNG">
