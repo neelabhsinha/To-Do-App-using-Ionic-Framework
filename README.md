@@ -19,6 +19,7 @@ $ npm install -g ionic cordova
 $ ionic cordova plugin add cordova-sqlite-storage
 $ npm install --save @ionic/storage
 $ ionic serve --l
+```
 
 <h2> Home Screen - </h2>
 <img src="/screenshots/Sidebar.PNG">
