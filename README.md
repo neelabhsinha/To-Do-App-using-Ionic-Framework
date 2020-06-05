@@ -10,7 +10,7 @@ To install required plugins -
 ``` cmd
 node --version
 ```
-2. Open Gitbash and type -
+2. Open any terminal and type -
 
 ``` cmd
 $ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
