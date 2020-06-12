@@ -15,10 +15,8 @@ node --version
 ``` cmd
 $ git clone https://github.com/neelabhsinha/To-Do-App-using-Ionic-Framework/
 $ cd To-Do-App-using-Ionic-Framework
-$ npm install -g ionic cordova
-$ ionic cordova plugin add cordova-sqlite-storage
-$ npm install --save @ionic/storage
-$ ionic serve --l
+$ npm install
+$ ionic serve
 ```
 
 <h2> Home Screen - </h2>
