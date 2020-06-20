@@ -5,7 +5,7 @@ This is a mobile app for a ToDo list, and supports Create, Read, Update and Dele
 
 To install required plugins -
 
-1. Download and install [Node.js](https://nodejs.org/en/) and check using -
+1. Download and install [Node.js](https://nodejs.org/) and check using -
 
 ``` cmd
 node --version
